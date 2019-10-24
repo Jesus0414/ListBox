@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ListBox"
         mc:Ignorable="d"
-        Title="MainWindow" Height="437.743" Width="519.844">
+        Title="MainWindow" Height="440.938" Width="649.25">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FFB86399" Offset="0"/>
@@ -13,7 +13,7 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="292" Margin="61,58,0,0" VerticalAlignment="Top" Width="225">
+        <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="292" Margin="61,58,0,0" VerticalAlignment="Top" Width="150" SelectionChanged="lstColores_SelectionChanged">
             <ListBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </ListBox.Background>
@@ -21,12 +21,51 @@
             <ListBoxItem>Opción 2</ListBoxItem>
             <ListBoxItem>Opción 3</ListBoxItem-->
         </ListBox>
-        <TextBox x:Name="txtColor" HorizontalAlignment="Left" Height="38" Margin="308,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
+        <!--TextBox x:Name="txtColor"  HorizontalAlignment="Left" Height="36" Margin="308,82,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </-->
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="31" Margin="308,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
             <TextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.9"/>
             </TextBox.Background>
         </TextBox>
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="336,163,0,0" Click="btnAgregar_Click"/>
+        <TextBox x:Name="txtHexadecimal" HorizontalAlignment="Left" Height="32" Margin="308,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="txtRGB" HorizontalAlignment="Left" Height="29" Margin="308,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="496,52,0,0" Click="btnAgregar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="216,82,0,0" Click="btnEliminar_Click"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Margin="308,28,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Hexadecimal: " VerticalAlignment="Top" Margin="308,88,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="RGB:" VerticalAlignment="Top" Margin="308,146,0,0"/>
+        <TextBox x:Name="txtNombreEditar" HorizontalAlignment="Left" Height="31" Margin="308,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="txtHexadecimalEditar" HorizontalAlignment="Left" Height="32" Margin="308,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="txtRGBEditar" HorizontalAlignment="Left" Height="29" Margin="308,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.9"/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="496,240,0,0" Click="btnEditar_Click" />
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Margin="308,216,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Hexadecimal: " VerticalAlignment="Top" Margin="308,276,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="RGB:" VerticalAlignment="Top" Margin="308,334,0,0"/>
 
     </Grid>
 </Window>
