@@ -13,7 +13,7 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="292" Margin="61,58,0,0" VerticalAlignment="Top" Width="150" SelectionChanged="lstColores_SelectionChanged">
+        <ListBox x:Name="lstColores"   HorizontalAlignment="Left" Height="292" Margin="61,58,0,0" VerticalAlignment="Top" Width="150" SelectionChanged="lstColores_SelectionChanged">
             <ListBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.5"/>
             </ListBox.Background>
